@@ -1,0 +1,31 @@
+/* pages/wait/wait.wxss */
+
+
+.icon-box{
+  margin-top:10%;
+}
+.icon-box-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-box-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:37rpx;
+}
+
+.icon-box-recom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fuzzy{
+  font-size: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-style: oblique;
+  text-align: center;
+  font-size:28rpx;
+}

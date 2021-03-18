@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<image class='background' src="../../img/background.jpg" mode="aspectFill"></image>
+<view>
+    <view class='icon'>
+        <image class='iconpic' src="../../img/icon.png" mode='aspectFit'></image>
+    </view>
+     <view class="inputwindow">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <navigator class="navigatorinput" decode="ture" url="../post/post">请输入搜索学者姓名(英文)...</navigator>
+                </view>
+            </view>
+            <!-- 搜索按钮,调用搜索查询方法 -->
+            <button class="weui-search-bar__cancel-btn" type="primary" bindtap='noinputalert'>搜索</button>
+        </view>
+    </view>
+    <button class="evolution" type="primary" bindtap="goTopic">研究热点趋势</button>
+</view>

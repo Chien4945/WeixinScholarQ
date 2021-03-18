@@ -1,0 +1,48 @@
+<!--pages/echarts/echarts.wxml-->
+<image class='background' src="../../img/background.jpg" mode="aspectFill"></image>
+<view class="block"></view>
+<view class="profile">
+  <view class="up">
+    <image src="../../img/head.png" class="head"></image>
+    <view class="info">
+      <view class="name">{{profile["name"]}}</view>
+      <view class="affiliation">{{affiliation}}</view>
+      <view class="e-mail">{{profile["email_domain"]}}</view>
+      <view class="interest">{{domain}}</view>
+    </view>
+  </view>
+  <view class="down">
+    <text decode="{{true}}">被引数:&nbsp;{{profile["citedby"]}}&nbsp;&nbsp;&nbsp;&nbsp;i10-指数:&nbsp;{{profile["i10index"]}}&nbsp;&nbsp;&nbsp;&nbsp;H-指数:&nbsp;{{profile["hindex"]}}</text>
+  </view>
+</view>
+<view class="my-chart1">
+  <ec-canvas id="my-chart-dom" canvas-id="mychart" ec="{{ecLine}}"></ec-canvas>
+</view>
+<view class="my-chart2">
+  <ec-canvas id="my-chart-dom" canvas-id="mychart" ec="{{ecGraph}}"></ec-canvas>
+</view>
+
+<view class="pubtable">
+  <text class="pubtitle">PUBLICATIONS\n</text>
+  <view class="table">
+    <view class="tr bg-w">
+    <view class="tth">题目</view>
+    <view class="th">被引</view>
+    <view class="th">出版年份</view>
+    </view>
+    <block wx:for="{{publications}}" wx:key="title">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="tt">{{item.title}}</view>
+      <view class="td">{{item.citations}}</view>
+      <view class="td">{{item.years}}</view>
+      </view>
+      <view class="tr" wx:else>
+      <view class="tt">{{item.title}}</view>
+      <view class="td">{{item.citations}}</view>
+      <view class="td">{{item.years}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="line"></view>
+  <view class="tip" bindtap="morePub">+more</view>
+</view>

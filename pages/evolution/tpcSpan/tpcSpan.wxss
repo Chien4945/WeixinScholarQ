@@ -1,0 +1,35 @@
+.Page{
+  height:100%;
+  width:100%;
+}
+.block{
+  height: 23rpx;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+
+.klineDesk{
+  width: 96%;
+  height: 100%;
+  border: 3rpx solid #607B8B;
+  border-radius: 10rpx;
+  background-color: #607B8B;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.kline{
+  width: 725rpx;
+  height: 1150rpx;
+}
+ec-canvas{
+  width: 100%;
+  height: 100%;
+}

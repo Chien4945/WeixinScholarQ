@@ -1,0 +1,8 @@
+<view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="cancel" size="80"></icon>
+    <view class="icon-box-title">抱歉，未查询到相关学者信息。</view>
+    <view class="icon-box-subtitle">学者数据仍在扩充，敬请等待...</view>
+  </view>
+</view>
+

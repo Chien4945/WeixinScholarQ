@@ -1,0 +1,176 @@
+/* pages/echarts/echarts.wxss */
+.page{
+  height: 100%;
+  width: 100%;
+}
+
+.block{
+  height: 28rpx;
+}
+
+
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+
+.profile{
+  height: 30%;
+  border: 3rpx solid rgb(250, 250, 174);
+  border-radius: 10rpx;
+  background-color: rgb(250, 250, 174);
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.up{
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.down{
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  font-size: 25rpx;
+  padding-left: 5%;
+  margin-bottom: 2%;
+}
+
+.name{
+  font-size: 40rpx;
+}
+
+.affiliation{
+  font-size:23rpx;
+}
+
+.e-mail{
+  font-size:23rpx;
+}
+
+.interest{
+  font-size:23rpx;
+}
+
+.head{
+  width: 140rpx;
+  height: 140rpx;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.info{
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.my-chart1{
+  width: 96%;
+  height: 400rpx;
+  border: 3rpx solid #607B8B;
+  border-radius: 10rpx;
+  background-color: #607B8B;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.my-chart2{
+  width: 96%;
+  height: 633rpx;
+  border: 3rpx solid #607B8B;
+  border-radius: 10rpx;
+  background-color: #607B8B;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.pubtable{
+  width: 96%;
+  height: 677rpx;
+  border: 3rpx solid #607B8B;
+  border-radius: 10rpx;
+  background-color: #607B8B;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.pubtitle{
+  font-size:30rpx ;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2.5rem;
+  align-items: center;
+ }
+ .tt{
+  width:100%;
+  font-size: 18rpx;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+ }
+ .td {
+  width:14.5%;
+  font-size: 25rpx;
+  justify-content: center;
+  text-align: center;
+ }
+ .bg-w{
+  background: snow;
+ }
+ .bg-g{
+  background: #E6F3F9;
+ }
+ .th {
+  width: 14.5%;
+  justify-content: center;
+  background: #5f6168;
+  color: rgb(209, 212, 160);
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+ }
+ .tth {
+  width: 100%;
+  justify-content: center;
+  background: #5f6168;
+  color: rgb(209, 212, 160);
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+ }
+ .table{
+   margin-top: 2%;
+ }
+.tip{
+  font-size: 25rpx;
+  border: 3rpx solid #5f6168;
+  border-radius: 10rpx;
+  background-color: #5f6168;
+  margin-top: 3%;
+  margin-left: 87%;
+  margin-right: 2%;
+}
+.line{
+  background: #000000;
+  height: 1rpx;
+  width: 100%;
+}
+ec-canvas{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,9 @@
+<view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="info" size="80"></icon>
+    <view class="icon-box-title">您想搜索的是不是：</view>
+  </view>
+  <view class="fuzzy">
+    <text user-select="{{true}}">{{fuzzy}}</text>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="pubtable">
+  <text class="pubtitle">PUBLICATIONS\n</text>
+  <view class="table">
+    <view class="tr bg-w">
+    <view class="tth">题目</view>
+    <view class="th">被引</view>
+    <view class="th">出版年份</view>
+    </view>
+    <block wx:for="{{publications}}" wx:key="title">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="tt">{{item.title}}</view>
+      <view class="td">{{item.citations}}</view>
+      <view class="td">{{item.years}}</view>
+      </view>
+      <view class="tr" wx:else>
+      <view class="tt">{{item.title}}</view>
+      <view class="td">{{item.citations}}</view>
+      <view class="td">{{item.years}}</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<image class='background' src="../../../img/background.jpg" mode="aspectFill"></image>
+<view class="block"></view>
+<view class="riverDesk">
+  <view class="river">
+  <ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{rvGraph}}"></ec-canvas>
+  </view>
+</view>
+<view class="tip" bindtap="simplifyTpc">
+  <text class="tipChar">+simplify</text>
+</view>
+

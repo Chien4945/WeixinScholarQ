@@ -1,0 +1,8 @@
+<view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="cancel" size="80"></icon>
+    <view class="icon-box-title">原始文件缺失</view>
+    <view class="icon-box-subtitle">原始文件缺失</view>
+  </view>
+</view>
+

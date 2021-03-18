@@ -1,0 +1,7 @@
+<image class='background' src="../../../img/background.jpg" mode="aspectFill"></image>
+<view class="block"></view>
+<view class="klineDesk">
+  <view class="kline">
+    <ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{klineChart}}"></ec-canvas>
+  </view>
+</view>

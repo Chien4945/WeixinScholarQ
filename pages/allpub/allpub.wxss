@@ -1,0 +1,62 @@
+.pubtable{
+  width: 96%;
+  height: 100%;
+  border: 3rpx solid #607B8B;
+  border-radius: 10rpx;
+  background-color: #607B8B;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.pubtitle{
+  font-size:30rpx ;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2.5rem;
+  align-items: center;
+ }
+ .tt{
+  width:100%;
+  font-size: 18rpx;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+ }
+ .td {
+  width:14.5%;
+  font-size: 25rpx;
+  justify-content: center;
+  text-align: center;
+ }
+ .bg-w{
+  background: snow;
+ }
+ .bg-g{
+  background: #E6F3F9;
+ }
+ .th {
+  width: 14.5%;
+  justify-content: center;
+  background: #5f6168;
+  color: rgb(209, 212, 160);
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+ }
+ .tth {
+  width: 100%;
+  justify-content: center;
+  background: #5f6168;
+  color: rgb(209, 212, 160);
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+ }
+ .table{
+   margin-top: 2%;
+ }

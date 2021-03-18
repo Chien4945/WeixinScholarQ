@@ -1,0 +1,26 @@
+<!--pages/post/post.wxml-->
+<image class='background' src="../../img/background.jpg" mode="aspectFill"></image>
+<view class="topinput">
+  <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+      <!-- 搜索框 -->
+          <view class="weui-search-bar__box">
+              <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+              <input type="text" class="weui-search-bar__input" bindinput="getMassage" placeholder="请输入搜索学者姓名(英文)..."/>
+          </view>
+      </view>
+      <!-- 搜索按钮,调用搜索查询方法 -->
+      <button class="weui-search-bar__cancel-btn" type="primary" bindtap="exeMessage" data-operation='{{message}}'>搜索</button>
+  </view>
+</view>
+<view class="queryrecommand">
+  <view class="querytitle">推荐搜索：</view>
+  <view class="recommand">
+    <view bindtap="navi0">{{recommand[0]}}</view>
+    <view bindtap="navi5">{{recommand[5]}}</view>
+    <view bindtap="navi1">{{recommand[1]}}</view>
+    <view bindtap="navi4">{{recommand[4]}}</view>
+    <view bindtap="navi2">{{recommand[2]}}</view>
+    <view bindtap="navi3">{{recommand[3]}}</view>
+  </view>
+</view>

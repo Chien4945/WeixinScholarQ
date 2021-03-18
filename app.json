@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/post/post",
+    "pages/echarts/echarts",
+    "pages/wait/wait",
+    "pages/evolution/tpcRiver/tpcRiver",
+    "pages/evolution/tpcSpan/tpcSpan",
+    "pages/sorry/cantfd/cantfd",
+    "pages/sorry/fileloss/fileloss",
+    "pages/allpub/allpub"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "学者查询系统",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
