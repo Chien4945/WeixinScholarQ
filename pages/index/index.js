@@ -12,32 +12,9 @@ Page({
   },
 
   goTopic(){
-    wx.request({
-      url: this.data.url,
-    data:{
-      hint:"evolution",
-      message:"null"
-    },
-    success:(result)=>{
-      getApp().globalData.tpcOpt=result.data
-      this.jumptopic(result.data)
-      console.log(result.data)
-    },
+    wx.navigateTo({
+      url: '../topic/post/post',
     })
-    
-  },
-
-  jumptopic(message){
-    if (message[0]['flag'] == true){
-      wx.navigateTo({
-        url: '../evolution/tpcRiver/tpcRiver',
-      })
-    }
-    else{
-      wx,navigator({
-        url:"../sorry/fileloss",
-      })
-    }
   },
 
   noinputalert() {

@@ -1,9 +1,9 @@
 <!--pages/echarts/echarts.wxml-->
-<image class='background' src="../../img/background.jpg" mode="aspectFill"></image>
+<image class='background' src="../../../img/background.jpg" mode="aspectFill"></image>
 <view class="block"></view>
 <view class="profile">
   <view class="up">
-    <image src="../../img/head.png" class="head"></image>
+    <image src="../../../img/head.png" class="head"></image>
     <view class="info">
       <view class="name">{{profile["name"]}}</view>
       <view class="affiliation">{{affiliation}}</view>

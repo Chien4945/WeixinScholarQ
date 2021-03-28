@@ -1,0 +1,46 @@
+<!--pages/evolution/post/post.wxml-->
+<image class='background' src="../../../img/background.jpg" mode="aspectFill"></image>
+<view class="block"></view>
+<view class="selectpart">
+    <view class="page-section page-section-gap">
+      <text class="titleSelect">刊物选择</text>
+      <radio-group class="group" bindchange="radioChange" data-part="journal">
+        <view class="label" wx:for="{{journalItems}}">
+          <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}" disabled='{{item.disabled}}'></radio>
+          <label class="label-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+        </view>
+      </radio-group>
+    </view>
+</view>
+
+
+<view class="selectpart">
+    <text class="titleSelect">时间跨度选择</text>
+    <view class="datePicker">
+    <text class="selecttip">起始日期:</text>
+      <picker class="dateSelect" mode="date" value="{{date}}" fields="month" end="2020-12" bindchange="changeDate" data-point="start">
+      <text wx:if="{{start_selected==false}}" class="titlePart">点击选择起始日期</text>
+      <text wx:if="{{start_selected==true}}" class="datePart">{{startDate}}</text>
+      </picker>
+    </view>
+    <view class="datePicker">
+    <text class="selecttip">结束日期:</text>
+      <picker class="dateSelect" mode="date" value="{{date}}" fields="month" end="2021-4" bindchange="changeDate" data-point="over">
+      <text wx:if="{{over_selected==false}}" class="titlePart">点击选择结束日期</text>
+      <text wx:if="{{over_selected==true}}" class="datePart">{{overDate}}</text>
+      </picker>
+    </view>
+</view>
+
+
+<view class="selectpart">
+    <text class="titleSelect">视图选择</text>
+    <radio-group class="group" bindchange="radioChange" data-part="show">
+        <view class="label" wx:for="{{showItems}}">
+          <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}" disabled='{{item.disabled}}'></radio>
+          <label class="label-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+        </view>
+      </radio-group>
+</view>
+
+<button class="showgraph" type="primary" bindtap="goVisual">SHOW</button>

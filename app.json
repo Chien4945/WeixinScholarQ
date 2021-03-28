@@ -2,13 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/post/post",
-    "pages/echarts/echarts",
+    "pages/echart/echarts/echarts",
     "pages/wait/wait",
-    "pages/evolution/tpcRiver/tpcRiver",
-    "pages/evolution/tpcSpan/tpcSpan",
+    "pages/topic/tpcRiver/tpcRiver",
+    "pages/topic/tpcSpan/tpcSpan",
+    "pages/topic/tpcWords/tpcWords",
+    "pages/topic/post/post",
     "pages/sorry/cantfd/cantfd",
     "pages/sorry/fileloss/fileloss",
-    "pages/allpub/allpub"
+    "pages/echart/allpub/allpub"
   ],
   "window":{
     "backgroundTextStyle":"light",

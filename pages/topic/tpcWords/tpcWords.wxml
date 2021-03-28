@@ -1,0 +1,3 @@
+<!--pages/topic/tpcWords/tpcWords.wxml-->
+<image class='background' src="../../../img/background.jpg" mode="aspectFill"></image>
+<view class="block"></view>

@@ -35,7 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    url:'http://192.168.100.132:8080/ScholarQuery/scholarquery',
+    url:'http://10.120.179.128:8080/ScholarQuery/scholarquery',
     opt:[],
     fuzzy:[],
     tpcOpt:[],

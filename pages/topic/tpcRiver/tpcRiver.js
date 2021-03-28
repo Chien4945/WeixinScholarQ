@@ -1,4 +1,4 @@
-// pages/evolution/tpcRiver/tpcRiver.js
+// pages/topic/tpcRiver/tpcRiver.js
 import * as echarts from "../../../ec-canvas/echarts"
 let chart = null
 Page({
@@ -13,6 +13,10 @@ Page({
     wx.navigateTo({
       url: '../tpcSpan/tpcSpan',
     })
+  },
+
+  onload(){
+    console.log(getApp().globalData.tpcOpt[1])
   }
 
 })

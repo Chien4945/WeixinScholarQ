@@ -1,4 +1,4 @@
-// pages/evolution/tpcSpan/tpcSpan.js
+// pages/topic/tpcSpan/tpcSpan.js
 import * as echarts from "../../../ec-canvas/echarts"
 let chart = null
 Page({

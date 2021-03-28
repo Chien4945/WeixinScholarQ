@@ -73,7 +73,7 @@ Page({
     }
     else{
       wx.navigateTo({
-        url: '../echarts/echarts',
+        url: '../echart/echarts/echarts',
       })
     }  
   },
