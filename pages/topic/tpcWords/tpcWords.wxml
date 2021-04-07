@@ -1,3 +1,19 @@
 <!--pages/topic/tpcWords/tpcWords.wxml-->
 <image class='background' src="../../../img/background.jpg" mode="aspectFill"></image>
 <view class="block"></view>
+<image class="refresh" src="../../../img/refresh.png" bindtap="refresh" data-word="{{item.word}}"/>
+<block wx:for="{{wordOpt}}">
+  <view class="card">
+      <view class="up">
+        <view class="Word">
+        <image src="../../../img/hot.png" class="hot"/>
+        <view class="word">
+          {{item.word}}
+        </view>
+        </view>
+      </view>
+      <view class="sentence">
+      <text class="senHEAD" user-select="{{true}}">{{item.sentence.head}}<text class="senBODY" user-select="{{true}}" decode="{{true}}">&nbsp;{{item.sentence.body}}&nbsp;</text>{{item.sentence.tail}}</text>
+      </view>
+  </view>
+</block>

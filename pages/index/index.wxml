@@ -17,5 +17,4 @@
             <button class="weui-search-bar__cancel-btn" type="primary" bindtap='noinputalert'>搜索</button>
         </view>
     </view>
-    <button class="evolution" type="primary" bindtap="goTopic">研究热点趋势</button>
 </view>

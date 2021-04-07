@@ -18,6 +18,6 @@ function klineChart(canvas,width,height,dpr){
     devicePixelRatio:dpr
   })
   canvas.setChart(chart)
-  chart.setOption(getApp().globalData.tpcOpt[2])
+  chart.setOption(getApp().globalData.tpcRv.kline)
   return chart
 }

@@ -72,9 +72,14 @@ Page({
       }
     }
     else{
+      wx.showLoading({
+        title:"数据正在加载",
+        mask:true
+      })
       wx.navigateTo({
         url: '../echart/echarts/echarts',
       })
+      wx.hideLoading()
     }  
   },
 

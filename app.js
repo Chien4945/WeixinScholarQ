@@ -35,9 +35,16 @@ App({
   },
   globalData: {
     userInfo: null,
-    url:'http://10.120.179.128:8080/ScholarQuery/scholarquery',
+    url:"https://38d7053868.eicp.vip/ScholarQuery/scholarquery",
+    tpcWd:{
+      index:0,
+      opt:[],
+    },
     opt:[],
     fuzzy:[],
-    tpcOpt:[],
+    tpcRv:{
+      river:{},
+      kline:{}
+    },
   }
 })

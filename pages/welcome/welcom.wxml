@@ -1,0 +1,6 @@
+<!--pages/welcome/welcom.wxml-->
+<image class='background' src="../../img/background.jpg" mode="aspectFill"></image>
+<view class= "navigator">
+    <button class="scholar" type="primary" bindtap='toscholar'>学者信息可视化</button>
+    <button class="evolution" type="primary" bindtap='toevolution'>研究热点可视化</button>
+</view>

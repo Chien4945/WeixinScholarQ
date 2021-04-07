@@ -5,7 +5,7 @@
     <view class="page-section page-section-gap">
       <text class="titleSelect">刊物选择</text>
       <radio-group class="group" bindchange="radioChange" data-part="journal">
-        <view class="label" wx:for="{{journalItems}}">
+        <view class="label" wx:for="{{journalItems}}" wx:key="id">
           <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}" disabled='{{item.disabled}}'></radio>
           <label class="label-text" for="{{item.name}}"><text>{{item.name}}</text></label>
         </view>
@@ -34,13 +34,22 @@
 
 
 <view class="selectpart">
-    <text class="titleSelect">视图选择</text>
-    <radio-group class="group" bindchange="radioChange" data-part="show">
-        <view class="label" wx:for="{{showItems}}">
+  <view class="container">
+      <radio-group class="group" bindchange="radioChange" data-part="show">
+        <view class="label" wx:for="{{showItems}}" wx:key="id">
           <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}" disabled='{{item.disabled}}'></radio>
           <label class="label-text" for="{{item.name}}"><text>{{item.name}}</text></label>
         </view>
       </radio-group>
+    <view class="topicnum">
+      <text class="tipNum">主题数选择</text>
+      <picker class="numSelect" mode="selector" range="{{numRange}}" bindchange="changeNum" >
+      <text wx:if="{{numSelect==false}}" class="titlePart">请选择个数</text>
+      <text wx:if="{{numSelect==true}}" class="datePart">{{selectNum}}</text>
+      </picker>
+    </view>
+  </view>
+    
 </view>
 
 <button class="showgraph" type="primary" bindtap="goVisual">SHOW</button>

@@ -1,0 +1,13 @@
+<!--pages/experiment/experiment.wxml-->
+<button bindtap="gopage">goPage</button>
+<button bindtap="click">Experiment</button>
+<view>{{char}}</view>
+<text class="backgd">我的名字是<text class="highview">张健</text>哈哈哈哈哈</text>
+
+<wxs module="foo">
+    var word = function(word){
+        return word;
+    }
+    module.exports = {msg :word}
+</wxs>
+<view>{{foo.msg}}</view>

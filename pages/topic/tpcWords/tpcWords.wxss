@@ -14,3 +14,74 @@
     background-size:100% 100%;
     z-index: -1;
   }
+
+  .card{
+    width: 96%;
+    height: 488rpx;
+    border: 3rpx solid #607B8B;
+    border-radius: 10rpx;
+    background-color: #607B8B;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .refresh{
+    width: 55rpx;
+    height: 55rpx;
+    margin-left: 90%;
+    margin-top: 3%;
+  }
+
+  .Word{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sentence{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+
+  .senHEAD{
+    color: black;
+  }
+
+  .senBODY{
+    color:brown;
+  }
+
+  .senTAIL{
+    color:black;
+  }
+
+  .hot{
+    width: 55rpx;
+    height: 55rpx;
+    margin-right: 4%;
+    margin-top: 4%;
+  }
+
+  .word{
+    text-transform:Uppercase;
+    color: rgb(231, 250, 64);
+    font-size: large;
+    margin-top: 5%;
+    margin-left: 1%;
+  }

@@ -4,6 +4,8 @@
     <view class="icon-box-title">您想搜索的是不是：</view>
   </view>
   <view class="fuzzy">
-    <text user-select="{{true}}">{{fuzzy}}</text>
+    <view class="jumpword" wx:for="{{fuzzy}}" bindtap="fuzzyJump" data-name="{{item}}"> 
+      {{item}}
+    </view>
   </view>
 </view>

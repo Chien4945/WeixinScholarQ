@@ -11,11 +11,6 @@ Page({
 
   },
 
-  goTopic(){
-    wx.navigateTo({
-      url: '../topic/post/post',
-    })
-  },
 
   noinputalert() {
     wx.showToast({

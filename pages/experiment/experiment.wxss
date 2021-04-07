@@ -1,0 +1,7 @@
+/* pages/experiment/experiment.wxss */
+.backgd{
+    color: black;
+}
+.highview{
+    color: brown;
+}

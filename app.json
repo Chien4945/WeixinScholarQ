@@ -1,6 +1,8 @@
 {
   "pages":[
+    "pages/welcome/welcom",
     "pages/index/index",
+    "pages/experiment/experiment",
     "pages/post/post",
     "pages/echart/echarts/echarts",
     "pages/wait/wait",
@@ -15,7 +17,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "学者查询系统",
+    "navigationBarTitleText": "学术信息可视化系统",
     "navigationBarTextStyle":"black"
   },
   "sitemapLocation": "sitemap.json"

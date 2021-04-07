@@ -28,6 +28,7 @@
 
 .label {
   margin: 30rpx 35rpx;
+  height: 120rpx;
 }
 .label-text {
   color: #000;
@@ -56,6 +57,18 @@
   margin-left: 8%;
 }
 
+.numSelect{
+  width: 225rpx;
+  border: 3rpx solid #000;
+  border-radius: 10rpx;
+  background-color: white;
+  margin-left: 8%;
+}
+
+.topicnum{
+  margin-bottom: 30%;
+}
+
 .titlePart{
   display: flex;
   flex-direction: column;
@@ -76,9 +89,25 @@
   margin-left: 10%;
 }
 
+.tipNum{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .showgraph {
   margin-top: 10%;
   margin-left: 65%;
   margin-right: 5%;
   font-size: 27rpx;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+

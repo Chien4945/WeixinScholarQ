@@ -16,7 +16,8 @@ Page({
   },
 
   onload(){
-    console.log(getApp().globalData.tpcOpt[1])
+    console.log("join")
+    console.log(getApp().globalData.tpcRv.river)
   }
 
 })
@@ -28,6 +29,6 @@ function RiverChart(canvas,width,height,dpr){
     devicePixelRatio:dpr
   })
   canvas.setChart(chart)
-  chart.setOption(getApp().globalData.tpcOpt[1])
+  chart.setOption(getApp().globalData.tpcRv.river)
   return chart
 }
