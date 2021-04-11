@@ -16,11 +16,12 @@
 <view class="queryrecommand">
   <view class="querytitle">推荐搜索：</view>
   <view class="recommand">
-    <view bindtap="navi0">{{recommand[0]}}</view>
-    <view bindtap="navi5">{{recommand[5]}}</view>
-    <view bindtap="navi1">{{recommand[1]}}</view>
-    <view bindtap="navi4">{{recommand[4]}}</view>
-    <view bindtap="navi2">{{recommand[2]}}</view>
-    <view bindtap="navi3">{{recommand[3]}}</view>
+    <view bindtap="navi" data-id="0">{{recommand[0]}}</view>
+    <view bindtap="navi" data-id="5">{{recommand[5]}}</view>
+    <view bindtap="navi" data-id="1">{{recommand[1]}}</view>
+    <view bindtap="navi" data-id="4">{{recommand[4]}}</view>
+    <view bindtap="navi" data-id="2">{{recommand[2]}}</view>
+    <view bindtap="navi" data-id="3">{{recommand[3]}}</view>
   </view>
 </view>
+<text class="make" decode="true">中国石油大学(北京)&nbsp;知图智演实验室&nbsp;出品</text>

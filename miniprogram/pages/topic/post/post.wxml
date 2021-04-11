@@ -53,3 +53,4 @@
 </view>
 
 <button class="showgraph" type="primary" bindtap="goVisual">SHOW</button>
+<text class="make" decode="true">中国石油大学(北京)&nbsp;知图智演实验室&nbsp;出品</text>

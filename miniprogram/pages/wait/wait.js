@@ -13,6 +13,10 @@ Page({
 
   fuzzyJump(e){
     console.log("click:"+e.target.dataset.name)
+    wx.showLoading({
+      title:"数据正在加载",
+      mask:true
+    })
     wx.request({
       url: this.data.url,
     data:{
@@ -24,6 +28,7 @@ Page({
       wx.navigateTo({
         url: '../echart/echarts/echarts',
       })
+      wx.hideLoading()
     },
     })
   },

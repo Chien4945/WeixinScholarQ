@@ -20,6 +20,12 @@ Page({
     numSelect:false,
   },
 
+  onLoad(){
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
+  },
 
   radioChange(e) {
     const checked = e.detail.value

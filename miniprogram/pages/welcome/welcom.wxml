@@ -4,3 +4,4 @@
     <button class="scholar" type="primary" bindtap='toscholar'>学者信息可视化</button>
     <button class="evolution" type="primary" bindtap='toevolution'>研究热点可视化</button>
 </view>
+<text class="make" decode="true">中国石油大学(北京)&nbsp;知图智演实验室&nbsp;出品</text>

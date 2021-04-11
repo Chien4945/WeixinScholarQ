@@ -7,6 +7,10 @@ Page({
   },
 
   onLoad(){
+    wx.showLoading({
+      title:"数据正在加载",
+      mask:true
+    })
     wx.request({
       url: this.data.url,
       data:{
@@ -17,7 +21,8 @@ Page({
         this.setData({
           recommand:result.data.recommand
         })
-      }
+        wx.hideLoading()
+      },
     })
   },
 
@@ -41,6 +46,10 @@ Page({
     }
     else{
       getApp().globalData.message = message;
+      wx.showLoading({
+        title:"数据正在加载",
+        mask:true
+      })
       wx.request({
         url: this.data.url,
       data:{
@@ -51,6 +60,7 @@ Page({
         getApp().globalData.opt=result.data
         console.log(result.data)
         this.pageJump(result.data)
+        wx.hideLoading()
       },
       })
     }
@@ -83,96 +93,24 @@ Page({
     }  
   },
 
-  navi0(){
-    console.log (this.data.recommand[0])
+  navi(e){
+    console.log(e.currentTarget.dataset.id)
+    wx.showLoading({
+      title:"数据正在加载",
+      mask:true
+    })
       wx.request({
         url: this.data.url,
       data:{
         hint:"query",
-        message:this.data.recommand[0]
+        message:this.data.recommand[Number(e.currentTarget.dataset.id)]
       },
       success:(result)=>{
         getApp().globalData.opt=result.data
         console.log(result.data)
         this.pageJump(result.data)
+        wx.hideLoading()
       },
       })
   },
-
-  navi1(){
-    console.log (this.data.recommand[1])
-      wx.request({
-        url: this.data.url,
-      data:{
-        hint:"query",
-        message:this.data.recommand[1]
-      },
-      success:(result)=>{
-        getApp().globalData.opt=result.data
-        console.log(result.data)
-        this.pageJump(result.data)
-      },
-      })
-  },
-  navi2(){
-    console.log (this.data.recommand[2])
-      wx.request({
-        url: this.data.url,
-      data:{
-        hint:"query",
-        message:this.data.recommand[2]
-      },
-      success:(result)=>{
-        getApp().globalData.opt=result.data
-        console.log(result.data)
-        this.pageJump(result.data)
-      },
-      })
-  },
-  navi3(){
-    console.log (this.data.recommand[3])
-      wx.request({
-        url: this.data.url,
-      data:{
-        hint:"query",
-        message:this.data.recommand[3]
-      },
-      success:(result)=>{
-        getApp().globalData.opt=result.data
-        console.log(result.data)
-        this.pageJump(result.data)
-      },
-      })
-  },
-  navi4(){
-    console.log (this.data.recommand[4])
-      wx.request({
-        url: this.data.url,
-      data:{
-        hint:"query",
-        message:this.data.recommand[4]
-      },
-      success:(result)=>{
-        getApp().globalData.opt=result.data
-        console.log(result.data)
-        this.pageJump(result.data)
-      },
-      })
-  },
-  navi5(){
-    console.log (this.data.recommand[5])
-      wx.request({
-        url: this.data.url,
-      data:{
-        hint:"query",
-        message:this.data.recommand[5]
-      },
-      success:(result)=>{
-        getApp().globalData.opt=result.data
-        console.log(result.data)
-        this.pageJump(result.data)
-      },
-      })
-  },
-  
 })

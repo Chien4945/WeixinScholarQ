@@ -98,7 +98,7 @@
 }
 
 .showgraph {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 65%;
   margin-right: 5%;
   font-size: 27rpx;
@@ -111,3 +111,16 @@
   align-items: center;
 }
 
+.make{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 77rpx;
+  margin-bottom:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #807878;
+  font-size: small;
+}
